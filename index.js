@@ -12,7 +12,6 @@ const formElement = document.querySelector(".to-do__form");
 const inputElement = document.querySelector(".to-do__input");
 
 function loadTasks() {
-
 }
 
 function createItem(item) {
