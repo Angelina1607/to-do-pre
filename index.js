@@ -38,3 +38,11 @@ items = loadTasks();
 items.forEach(function(item){
 	listElement.append(createItem(item));
 })
+
+formElement.addEventListener('submit', function(event) {
+	event.preventDefault();
+	const newTask = createItem(inputElement.value);
+	listElement.prepend(newTask);
+	inputElement.value = '';
+});
+
